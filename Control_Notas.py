@@ -35,13 +35,13 @@ def main():
         resultado = agregar_alumno(nombre, notas)
         print(resultado)
         
-        while True:  # Bucle para validar la respuesta del usuario
+        while True:
             continuar = input("¿Desea agregar otro estudiante? (si/no): ").strip().lower()
             if continuar == "si":
-                break  # Sale del bucle y continúa con el siguiente estudiante
+                break 
             elif continuar == "no":
                 print("Gracias por usar el sistema de notas.")
-                return  # Termina el programa
+                return
             else:
                 print("Respuesta no válida. Por favor, escriba 'si' o 'no'.")
 
